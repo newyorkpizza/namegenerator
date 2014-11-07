@@ -4,7 +4,8 @@ namegenerator
 JavaScript function for generating satirical company names by combinaing tech terms with culinary terms.
 
 Some example names:
-    UtilityPod
+
+	UtilityPod
     SmokedLoad
     AsynchronousLemon
     FibersDefault
