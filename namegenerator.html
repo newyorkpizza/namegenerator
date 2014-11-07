@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://underscorejs.org/underscore-min.js"></script>
+<script src="namegenerator.js"></script>
+<script type="text/javascript">
+window.onload = refreshNames;
+
+function refreshNames() {
+	var names = generate3names(3);
+	$("#name1").html(names[0]);
+	$("#name2").html(names[1]);
+	$("#name3").html(names[2]);
+}
+
+</script
+</head>
+<body>
+<h1>Startup name generator</h1>
+<div id="generator">
+	<form action="javascript:refreshNames()">
+		<input type="submit" value="Generate new names">
+	</form>
+	<p id="name1"></p>
+	<p id="name2"></p>
+	<p id="name3"></p>
+</div>
+</body>
+</html>
