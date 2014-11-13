@@ -1,9 +1,9 @@
 namegenerator
 =============
 
-JavaScript function for generating satirical company names by combinaing tech terms with culinary terms.
+JavaScript function for generating satirical company names by combining tech terms with culinary terms.
 
-Some example names:
+Some examples:
 
 	UtilityPod
     SmokedLoad
@@ -17,6 +17,10 @@ Some example names:
     CoolFrame
     WokTweak
     ComputeMadeleine
+
+Demo
+====
+See the name generator in action [right here](https://newyorkpizza.github.io/namegenerator).
 
 Acknowledgements
 ----------------
