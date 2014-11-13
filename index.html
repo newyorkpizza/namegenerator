@@ -19,14 +19,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="http://underscorejs.org/underscore-min.js"></script>  </body>
 	<script src="namegenerator.js"></script>
+	<script src="insultgenerator.js"></script>
 	<script type="text/javascript">
-		window.onload = refreshNames;
-
+		window.onload = refreshAll;
+		
+		function refreshAll() {
+			refreshNames();
+			refreshInsult();
+		}
+		
 		function refreshNames() {
-			var names = generate3names(3);
+			var names = generate3names();
 			$("#name1").html(names[0]);
 			$("#name2").html(names[1]);
 			$("#name3").html(names[2]);
+		}
+		
+		function refreshInsult() {
+			var insult = generateInsult();
+			$("#insult").html(insult);
 		}
 
 	</script>
@@ -46,6 +57,13 @@
 			<p id="name3"></p>
 			<form action="javascript:refreshNames()">
 				<p><input class="btn btn-lg btn-success" type="submit" value="Generate new names"></p>
+			</form>
+      </div>
+      <div class="jumbotron">
+        <h2>Shakespeare insult generator</h2>
+			<p id="insult"></p>
+			<form action="javascript:refreshInsult()">
+				<p><input class="btn btn-lg btn-success" type="submit" value="Generate new insult"></p>
 			</form>
       </div>
     </div> <!-- /container -->
